@@ -12,36 +12,43 @@ import LanguageSwitcher from "./LanguageSwitcher"; // 新的客户端组件
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import FriendsLink from "./FriendsLink";
 
-export default function MyNavbar({ locale = 'en' }) {
-  const t = function(key){
+export default function MyNavbar({ locale = "en" }) {
+  const t = function(key) {
     return getTranslation(locale, key);
-  }
+  };
   return (
-    <Navbar classNames={{
-      wrapper: "page-container"
-    }}>
+    <Navbar
+      classNames={{
+        wrapper: "page-container",
+      }}
+    >
       <NavbarBrand>
         <Link href="/" className="text-foreground">
-          <Image src="/images/logo.png" alt="TwitterXDownload" width={32} height={32} />
+          <Image
+            src="/images/logo.png"
+            alt="TwitterXDownload"
+            width={32}
+            height={32}
+          />
           <p className="font-bold text-inherit mx-3 text-2xl">
-            {t('TwitterXDownload')}
+            {t("TwitterXDownload")}
           </p>
         </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-6" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/tweets">
-          {t('Search Tweets')}
+            {t("Search Tweets")}
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/downloader">
-          {t('Downloader')}
+            {t("Downloader")}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="https://github.com/ezshine/twitterxdownload" target="_blank">
-          {t('Self Hosted')}
+          <Link color="foreground" href="#" target="_blank">
+            {t("Self Hosted")}
           </Link>
         </NavbarItem>
         <NavbarItem>
