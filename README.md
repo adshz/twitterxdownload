@@ -27,7 +27,7 @@ BTW: also a best project for Developers to learn Next.js, HeroUI, TailwindCSS, M
 - Node.js 20+ 
 - Git
 - A server with Coolify installed
-> Get a supercheap and stable server from RackNerd (https://my.racknerd.com/aff.php?aff=10399)
+> Get a supercheap and stable server from RackNerd (https://my.racknerd.com)
 
 ### Local Development Setup
 
