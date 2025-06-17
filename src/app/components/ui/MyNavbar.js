@@ -35,7 +35,7 @@ export default function MyNavbar({ locale = "en" }) {
           </p>
         </Link>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-6" justify="center">
+      <NavbarContent className="hidden md:flex gap-6" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/tweets">
             {t("Search Tweets")}
@@ -56,7 +56,7 @@ export default function MyNavbar({ locale = "en" }) {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem>
+        <NavbarItem className="hidden md:flex">
           <LanguageSwitcher locale={locale} />
         </NavbarItem>
         <NavbarItem>
