@@ -44,12 +44,12 @@ export default async function Home({ params: { locale } }) {
           <h3 className="text-2xl font-bold px-2 py-4">{t('Download Twitter video and all content')}</h3>
           <div className="px-2">
             <p>
-              {t('TwitterXDownload is an online web app to download twitter videos and all content to your computer directly. Twitter videos and Twitter GIFs are embedded in the tweet, so to download twitter videos online, you need to copy the tweet URL/link and paste it in the above text box. Our Twitter X download service will extract the twitter to mp4 link from the tweet and you can save twitter videos to your computer.')}
+              {t('BestContentLab is a web application for content creators to browse and download popular videos on social media. Downloaded content can be used for further creation on your computer directly. X (formerly Twitter) videos and X GIFs are embedded in the posts, so to download twitter videos, please copy the specific URL/link and paste it in the above box. Our BestContentLab service will provide the video for you to download')}
             </p>
           </div>
         </div>
         <div className="section">
-          <h3 className="text-2xl font-bold px-2 py-4">{t('Frequently Asked Questions')}</h3>
+          <h3 className="text-2xl font-bold px-2 py-4">{t('FAQ')}</h3>
           <FAQ locale={locale} />
         </div>
       </div>

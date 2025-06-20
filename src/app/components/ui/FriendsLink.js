@@ -10,11 +10,12 @@ import {
 } from "@heroui/react";
 import { getTranslation } from "@/lib/i18n";
 
+
 const friendsLink = [
   {
     name: "Amazing David",
     url: "https://amazingdavid.com",
-    icon: "",
+    icon: "👋",
   },
 ];
 

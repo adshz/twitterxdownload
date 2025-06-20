@@ -11,6 +11,7 @@ import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher"; // 新的客户端组件
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import FriendsLink from "./FriendsLink";
+import BlogLink from "./BlogLink";
 
 export default function MyNavbar({ locale = "en" }) {
   const t = function(key) {
@@ -47,9 +48,7 @@ export default function MyNavbar({ locale = "en" }) {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" target="_blank">
-            {t("Self Hosted")}
-          </Link>
+          <BlogLink locale={locale} />
         </NavbarItem>
         <NavbarItem>
           <FriendsLink locale={locale} />
